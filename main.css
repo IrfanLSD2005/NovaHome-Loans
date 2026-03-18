@@ -1,0 +1,60 @@
+/* main.css - responsive modern banking style */
+:root {
+  --bg: #f4f7ff;
+  --surface: #ffffff;
+  --text: #1e2a46;
+  --muted: #6b7280;
+  --primary: #1f4fef;
+  --primary-dark: #1538bc;
+  --success: #16a34a;
+  --border: #e5e7eb;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --radius: 12px;
+}
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; background: var(--bg); color: var(--text); line-height:1.5; }
+.container { width:min(1100px, 92vw); margin:0 auto; }
+header { background:#fff; border-bottom:1px solid #eceff6; position:sticky; top:0; z-index:100; }
+.navbar { display:flex; align-items:center; justify-content:space-between; padding:12px 0; }
+.brand { font-weight:800; letter-spacing:.4px; color:#1f2937; font-size:1.1rem; }
+.nav-links { display:flex; gap:12px; align-items:center; }
+.nav-links a { color:#374151; font-weight:500; text-decoration:none; font-size:.93rem; padding:8px 10px; border-radius:8px; transition:.15s; }
+.nav-links a:hover, .nav-links a.active { background:#eef2ff; color:#111827; }
+.mobile-toggle { display:none; border:none; background:none; font-size:1.2rem; }
+.hero { padding:40px 0 24px; }
+.hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:center; }
+.hero h1 { font-size:2rem; margin-bottom:12px; color:#111827; }
+.hero p { color:#4b5563; margin-bottom:20px; font-size:1rem; max-width:560px; }
+.cta-group { display:flex; flex-wrap:wrap; gap:10px; }
+.btn { border:none; border-radius:8px; cursor:pointer; padding:12px 18px; font-size:0.92rem; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; transition:.2s; }
+.btn-primary { background:var(--primary); color:#fff; }
+.btn-primary:hover { background:var(--primary-dark); }
+.btn-secondary { background:#eef2ff; color:#1f2937; }
+.section { background:#fff; margin-top:16px; border-radius:14px; padding:20px; box-shadow:var(--shadow); border:1px solid #eef2ff; }
+.grid-three { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.loan-card { border:1px solid #e2e8f0; border-radius:12px; padding:16px; background:#fff; }
+.loan-card h3 { font-size:1.1rem; margin-bottom:8px; color:#111827; }
+.loan-card p { color:#4b5563; margin-bottom:10px; font-size:.93rem; }
+.loan-card .btn { margin-top:6px; }
+.features { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.feature { background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px; }
+.feature h4 { font-size:.95rem; margin-bottom:5px; }
+footer { margin-top:20px; padding:14px 0; background:#fff; border-top:1px solid #e2e8f0; }
+.footer-nav { display:flex; flex-wrap:wrap; gap:10px; color:#6b7280; font-size:.9rem; }
+.card-list { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; box-shadow:0 4px 10px rgba(0,0,0,0.04); }
+.card-header { display:flex; justify-content:space-between; margin-bottom:10px; }
+.card h3 { margin:0; font-size:1rem; }
+.card p { color:#4b5563; margin:0; }
+.form-card { background:#fff; border-radius:12px; padding:20px; border:1px solid #e5e7eb; }
+.field { margin-bottom:12px; }
+.field label { display:block; margin-bottom:5px; font-weight:600; font-size:.9rem; }
+.field input, .field select, .field textarea { width:100%; border:1px solid #d1d5db; border-radius:8px; background:#fff; padding:10px; font-size:.95rem; }
+.small-text { color:#6b7280; margin-top:4px; font-size:.85rem; }
+.form-actions { margin-top:16px; }
+.alert { background:#ecfdf3; border:1px solid #bbf7d0; color:#065f46; border-radius:8px; padding:10px; margin-bottom:14px; }
+.results { background:#eef2ff; border-radius:10px; padding:16px; margin-top:12px; border:1px dashed #c7d2fe; }
+@media (max-width:980px) { .hero-grid { grid-template-columns:1fr; } .card-list,.grid-three,.features { grid-template-columns:1fr 1fr; } }
+@media (max-width:760px) { .nav-links { display:none; } .mobile-toggle { display:block; } .mobile-nav { display:none; flex-direction:column; gap:6px; margin-top:10px; } .mobile-nav a{ padding:10px; border-radius:8px; background:#f8fafc;} .card-list,.grid-three,.features { grid-template-columns:1fr; } }
+.hidden { display:none !important; }
+.success-box { border-left:4px solid var(--success); background:#ecfdf3; padding:14px; border-radius:8px; }

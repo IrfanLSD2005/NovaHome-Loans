@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>NovaHome Loans - Apply</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="brand">NovaHome Loans</div>
+    <button id="navToggle" class="mobile-toggle" aria-label="Toggle nav">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="loans.html">Loan Products</a>
+      <a href="calculator.html">EMI Calculator</a>
+      <a href="apply.html" class="active">Apply</a>
+    </nav>
+  </div>
+  <div id="mobileNav" class="container mobile-nav hidden">
+    <a href="index.html">Home</a>
+    <a href="loans.html">Loan Products</a>
+    <a href="calculator.html">EMI Calculator</a>
+    <a href="apply.html">Apply</a>
+  </div>
+</header>
+<main class="container">
+  <section class="section">
+    <h1>Apply for Loan</h1>
+    <p class="small-text">Complete the form to quickly submit your loan request.</p>
+    <div class="form-card">
+      <form id="loanForm">
+        <div class="field"><label for="fullName">Full Name</label><input id="fullName" name="fullName" type="text" required /></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required /></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required /></div>
+        <div class="field"><label for="employmentType">Employment Type</label><select id="employmentType" name="employmentType" required><option value="">Select</option><option value="Salaried">Salaried</option><option value="Self-Employed">Self-Employed</option><option value="Business">Business</option><option value="Student">Student</option></select></div>
+        <div class="field"><label for="monthlyIncome">Monthly Income</label><select id="monthlyIncome" name="monthlyIncome" required><option value="">Select</option><option value="<50k">Less than ₹50,000</option><option value="50k-1L">₹50,000 - ₹1,00,000</option><option value=">1L">Above ₹1,00,000</option></select></div>
+        <div class="field"><label for="loanType">Loan Type</label><select id="loanType" name="loanType" required><option value="">Select</option><option value="Home Loan">Home Loan</option><option value="Balance Transfer">Balance Transfer</option><option value="Loan Against Property">Loan Against Property</option></select></div>
+        <div class="form-actions"><button class="btn btn-primary" type="submit">Submit Application</button></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; align-items:center; gap:8px;">
+    <small>© 2026 NovaHome Loans</small>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="loans.html">Loan Products</a>
+      <a href="calculator.html">EMI Calculator</a>
+      <a href="apply.html">Apply</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

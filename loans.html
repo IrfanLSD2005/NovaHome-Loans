@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>NovaHome Loans - Products</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="brand">NovaHome Loans</div>
+    <button id="navToggle" class="mobile-toggle" aria-label="Toggle nav">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="loans.html" class="active">Loan Products</a>
+      <a href="calculator.html">EMI Calculator</a>
+      <a href="apply.html">Apply</a>
+    </nav>
+  </div>
+  <div id="mobileNav" class="container mobile-nav hidden">
+    <a href="index.html">Home</a>
+    <a href="loans.html">Loan Products</a>
+    <a href="calculator.html">EMI Calculator</a>
+    <a href="apply.html">Apply</a>
+  </div>
+</header>
+<main class="container">
+  <section class="section">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <div><h1>Loan Products</h1><p class="small-text">Choose from our curated loan options with transparent rates.</p></div>
+      <a class="btn btn-primary cta-apply" href="apply.html">Start Application</a>
+    </div>
+    <div class="card-list">
+      <article class="card loan-card">
+        <div class="card-header"><h3 class="loan-title">Home Loan</h3><span class="interest-rate">7.40% p.a.</span></div>
+        <p>Borrow up to 90% of property value with long-term repayment plans.</p>
+        <a class="btn btn-primary view-loan-btn" href="apply.html">View Details</a>
+      </article>
+      <article class="card loan-card">
+        <div class="card-header"><h3 class="loan-title">Balance Transfer</h3><span class="interest-rate">6.90% p.a.</span></div>
+        <p>Switch your current loan for a lower rate and reduced EMIs.</p>
+        <a class="btn btn-primary view-loan-btn" href="calculator.html">View Details</a>
+      </article>
+      <article class="card loan-card">
+        <div class="card-header"><h3 class="loan-title">Loan Against Property</h3><span class="interest-rate">8.10% p.a.</span></div>
+        <p>Access secured funds by mortgaging your property with flexible tenures.</p>
+        <a class="btn btn-primary view-loan-btn" href="apply.html">View Details</a>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; align-items:center; gap:8px;">
+    <small>© 2026 NovaHome Loans</small>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="loans.html">Loan Products</a>
+      <a href="calculator.html">EMI Calculator</a>
+      <a href="apply.html">Apply</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
